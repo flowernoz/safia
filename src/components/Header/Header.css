@@ -5,13 +5,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 3%;
-  box-shadow: linear-gradient(
+  background: linear-gradient(
     to bottom,
     rgba(51, 51, 51, 0.501),
     rgba(51, 51, 51, 0.297)
   );
-  filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff)
-    drop-shadow(0 0 15px #fff);
 }
 
 .header__logo {
