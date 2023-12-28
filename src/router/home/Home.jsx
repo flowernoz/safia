@@ -1,13 +1,14 @@
 import {
-  Banner,
-  Header,
-  Footer,
-  Menu,
-  CartLinks,
-  OurValues,
   About,
+  Banner,
+  CartLinks,
+  Footer,
+  Header,
+  Menu,
   News,
-} from "../../components";
+  OurValues,
+} from "../../components"
+import { imgData } from '../../static/newsData'
 function Home() {
   const arr = [
     {
@@ -64,7 +65,7 @@ function Home() {
       <CartLinks title={"Eng ko'p sotilgan"} data={popular} />
       <OurValues />
       <About />
-      <News />
+      <News imgData={imgData}/>
       <Footer />
     </div>
   );
