@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function modalHeader() {
   return (
-    <div>
+    <div className="modalHeader">
       <Link to={"/about"}>Biz haqimizda</Link>
       <Link to={"/menu"}>Menyu</Link>
       <Link to={"/news"}>Yangiliklar</Link>

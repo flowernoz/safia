@@ -1,4 +1,6 @@
 import "./News.css";
+import { IoIosArrowForward } from "react-icons/io";
+
 import Detailed from "../detailed/Detailed";
 import news from "../../assets/news/news.jpeg";
 import { Link } from "react-router-dom";

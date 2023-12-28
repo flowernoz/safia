@@ -7,15 +7,19 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
-
+import modalHeader from "./modalHeader";
+import Register from "../Register/Register";
 function Header() {
   const [openmodal, setOpenmodal] = useState(false);
+  const [openRegister, setOpenRegister] = useState(false);
   document.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     header.classList.toggle("scrolled", window.scrollY > 0);
   });
   return (
     <div className="header">
+      {!openmodal && <modalHeader />}
+      {!openRegister && <Register />}
       <div className="header__logo">
         <img src={logo} alt="logo" />
       </div>
@@ -38,7 +42,7 @@ function Header() {
       </div>
       <div className="header__buttons">
         <IoSearch />
-        <FaRegUserCircle />
+        <FaRegUserCircle onClick={() => setOpenRegister(!openRegister)} />
         <HiOutlineShoppingBag />
         <button className="openmodal" onClick={() => setOpenmodal(!openmodal)}>
           {!openmodal ? <HiOutlineBars3CenterLeft /> : <IoMdClose />}
