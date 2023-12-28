@@ -1,11 +1,14 @@
 import "./News.css";
 import Detailed from "../detailed/Detailed";
 import news from "../../assets/news/news.jpeg";
+import { Link } from "react-router-dom";
 function News() {
   return (
     <div>
       <div className="news__top">
-        <h2 className="heading">Yangiliklar</h2>
+        <Link to={"/news"} className="heading">
+          Yangiliklar
+        </Link>
         <div className="navigate__news">
           <button></button>
           <button></button>

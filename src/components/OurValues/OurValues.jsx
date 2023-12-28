@@ -7,29 +7,28 @@ function OurValues() {
     {
       img: value1,
       title: "Atrof muhit",
-      descript: "Safia kelajak haqida qayg'uradi",
+      desc: "Safia kelajak haqida qayg'uradi",
     },
     {
       img: value2,
       title: "Oila",
-      descript:
-        "Oilaviy qadriyatlarni asrab, odamlar hayotini bayramga aylantiramiz",
+      desc: "Oilaviy qadriyatlarni asrab, odamlar hayotini bayramga aylantiramiz",
     },
     {
       img: value3,
       title: "Inklyuziya",
-      descript: "Hamma uchun teng imkoniyatlar",
+      desc: "Hamma uchun teng imkoniyatlar",
     },
   ];
   return (
-    <div>
+    <div className="OurValues">
       <h2 className="heading">BIZNING QADRIYATLARIMIZ</h2>
       <div className="value__carts">
         {data.map((item, inx) => (
-          <div className="value__item">
+          <div key={inx} className="value__item">
             <img src={item.img} alt="" />
-            <p className="value__title">{item.title}</p>
-            <span className="cart__description">{item.descript}</span>
+            <p className="cart__title">{item.title}</p>
+            <span className="cart__description">{item.desc}</span>
           </div>
         ))}
       </div>

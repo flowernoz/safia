@@ -6,31 +6,25 @@ import menu3 from "../../assets/menu/menuPirojniy.png";
 import menu4 from "../../assets/menu/menuPechene.png";
 import menu5 from "../../assets/menu/menuQatlama.png";
 function Menu() {
+  const links = [
+    { img: menu1, title: "Dumaloq tortlar" },
+    { img: menu2, title: "Katta tortlar" },
+    { img: menu3, title: "Pirojniylar" },
+    { img: menu4, title: "Pechenye" },
+    { img: menu5, title: "Qatlamali pishiriqlar" },
+  ];
   return (
-    <div>
+    <div className="menu">
       <Link to={"/menu"}>
-        <button>...</button> Menyu
+        <button className="menuButton">...</button> Menyu
       </Link>
       <div className="menu__categories">
-        <Link>
-          <img src={menu1} alt="Dumaloq tortlar" /> Dumaloq tortlar
-        </Link>
-        <Link>
-          <img src={menu2} alt="Katta tortlar" />
-          Katta tortlar
-        </Link>
-        <Link>
-          <img src={menu3} alt="Pirojniylar" />
-          Pirojniylar
-        </Link>
-        <Link>
-          <img src={menu4} alt="Pechenye" />
-          Pechenye
-        </Link>
-        <Link>
-          <img src={menu5} alt="Qatlamali pishiriqlar" />
-          Qatlamali pishiriqlar
-        </Link>
+        {links.map((item, inx) => (
+          <Link className="categories__link" key={inx}>
+            <img src={item.img} alt={item.title} />
+            {item.title}
+          </Link>
+        ))}
       </div>
     </div>
   );

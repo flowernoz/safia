@@ -1,6 +1,4 @@
 import "./Banner.css";
-import { GrFormPrevious } from "react-icons/gr";
-import { GrNext } from "react-icons/gr";
 import bannerImg from "../../assets/banner/imgBanner.jpeg";
 import bannerVid from "../../assets/banner/videoBanner.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,22 +43,6 @@ function Banner() {
           ></video>
         </SwiperSlide>
       </Swiper>
-      {/* <div className="banner_media">
-        <img src={bannerImg} alt="" />
-        <video src={bannerVid}></video>
-      </div>
-      <div className="bannerBtns">
-        <button className="prev">
-          <GrFormPrevious />
-        </button>
-        <button className="next">
-          <GrNext />
-        </button>
-        <div className="activeSlide">
-          <button></button>
-          <button></button>
-        </div>
-      </div> */}
     </div>
   );
 }

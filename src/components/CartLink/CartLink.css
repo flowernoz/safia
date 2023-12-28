@@ -1,0 +1,93 @@
+.cartLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 70px 0;
+}
+.heading {
+  color: #212529;
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.products_cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cart__link {
+  width: 246px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.cart__img {
+  width: 100%;
+  height: 246px;
+  position: relative;
+}
+
+.cart__img span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff !important;
+  font-size: 14px;
+  background: #2e2124;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop__item {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background: #dcc38b;
+  font-size: 30px;
+  transition: all 0.25s ease-in;
+}
+
+.cart__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cart__title {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.cart__link:hover .shop__item {
+  background: #b99e65;
+}
+.cart__link p:hover {
+  text-decoration: underline;
+}
+.cart__description {
+  text-align: center;
+  color: #898989;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.cart__price {
+  text-align: center;
+  color: #212529;
+  font-size: 18px;
+}

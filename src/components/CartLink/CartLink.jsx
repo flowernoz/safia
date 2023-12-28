@@ -2,17 +2,27 @@ import { Link } from "react-router-dom";
 import "./CartLink.css";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 
-function CartLink() {
+function CartLink({ title, data }) {
   return (
-    <Link className="cart__link">
-      <img src="" alt="" />
-      <p className="cart__title"></p>
-      <span className="cart__description"></span>
-      <b className="cart__price"></b>
-      <button className="shop__item">
-        <HiOutlineShoppingBag />
-      </button>
-    </Link>
+    <div className="cartLinks">
+      <h2 className="heading">{title}</h2>
+      <div className="products_cart">
+        {data.map((item, inx) => (
+          <Link key={inx} className="cart__link">
+            <div className="cart__img">
+              {item?.type && <span>{item.type}</span>}
+              <img src={item?.img} alt={item?.title} />
+              <button className="shop__item">
+                <HiOutlineShoppingBag />
+              </button>
+            </div>
+            <p className="cart__title">{item?.title}</p>
+            <span className="cart__description">{item?.desc}</span>
+            <b className="cart__price">{item?.price} so'm</b>
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 }
 

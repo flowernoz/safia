@@ -1,0 +1,45 @@
+.about__us {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 30px 7%;
+  position: relative;
+}
+.about__info {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+.about__info img {
+  width: 540px;
+  height: 303px;
+  border-radius: 5px;
+}
+.our_history {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 35px;
+}
+.our_history h3 {
+  text-transform: capitalize;
+  text-align: left;
+  margin-bottom: 6px;
+}
+.our_history span {
+  text-align: left;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.sign {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.sign img {
+  width: 230px;
+  height: 82px;
+}
