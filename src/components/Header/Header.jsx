@@ -10,6 +10,10 @@ import { useState } from "react";
 
 function Header() {
   const [openmodal, setOpenmodal] = useState(false);
+  document.addEventListener("scroll", function () {
+    const header = document.querySelector(".header");
+    header.classList.toggle("scrolled", window.scrollY > 0);
+  });
   return (
     <div className="header">
       <div className="header__logo">
