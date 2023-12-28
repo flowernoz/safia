@@ -65,7 +65,7 @@ function Home() {
       <OurValues />
       <About />
       <News />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
