@@ -24,7 +24,7 @@ function News({imgData}) {
 			)
 		}
 	console.log('counter', counter)
-	const contentTransform = counter > 0 ? 1150 * counter : 0
+	const contentTransform = counter > 0 ? 383 * counter : 0
 	return (
 		<div className='news__home'>
 			<div className='news__top'>
