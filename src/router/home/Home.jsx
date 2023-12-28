@@ -1,11 +1,11 @@
-import { Banner, Header, Footer, Menu } from "../../components";
+import { Banner, Footer, Header } from '../../components'
 function Home() {
   return (
     <div className="home">
       <Header />
       <Banner />
       {/* <Menu /> */}
-      {/* <Footer /> */}
+      <Footer/>
     </div>
   );
 }
