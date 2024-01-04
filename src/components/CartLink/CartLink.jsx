@@ -7,7 +7,7 @@ function CartLink({ title, data }) {
     <div className="cartLinks">
       <h2 className="heading">{title}</h2>
       <div className="products_cart">
-        {data.map((item, inx) => (
+        {data?.map((item, inx) => (
           <Link key={inx} className="cart__link">
             <div className="cart__img">
               {item?.type && <span>{item.type}</span>}

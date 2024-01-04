@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function modalHeader() {
+function ModalHeader() {
   return (
     <div className="modalHeader">
       <Link to={"/about"}>Biz haqimizda</Link>
@@ -17,4 +17,4 @@ function modalHeader() {
   );
 }
 
-export default modalHeader;
+export default ModalHeader;

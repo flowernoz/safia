@@ -3,12 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  outline: none;
   text-decoration: none;
   scroll-behavior: smooth;
   background: none;
-  font-family: sans-serif;
 }
+
 body {
   max-width: 1366px;
   width: 100%;

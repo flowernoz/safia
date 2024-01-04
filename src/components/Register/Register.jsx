@@ -1,15 +1,26 @@
 import "./Register.css";
 import { IoMdClose } from "react-icons/io";
 import logoname from "../../assets/logos/logo-name.svg";
-function Register({ setOpenRegister }) {
+import { useState } from "react";
+function Register({ openregister }) {
+  function sendData() {
+    JSON.stringify(localStorage.setItem("user", value));
+  }
+  const [value, setValue] = useState("+998");
   return (
     <div className="register">
-      <div className="overlay"></div>
+      <div onClick={() => openregister(false)} className="overlay"></div>
       <div className="modal__box">
-        <IoMdClose onClick={() => setOpenRegister(false)} />
+        <IoMdClose className="closer" onClick={() => openregister(false)} />
         <img src={logoname} alt="" />
-        <input placeholder="+998 " type="text" />
-        <button type="submit">davom etish</button>
+        <input
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          type="text"
+        />
+        <button onClick={sendData} type="submit">
+          davom etish
+        </button>
       </div>
     </div>
   );

@@ -1,17 +1,21 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { Footer, Header } from "./components";
 import Home from "./router/home/Home";
-
+import Menu from "./router/Menu/Menu";
 function Router() {
   return (
     <div className="routes">
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
         <Route path="/ourprojects" element={<OurProjects />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="/vacancy" element={<Vacancy />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

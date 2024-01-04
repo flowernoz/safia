@@ -1,13 +1,13 @@
 import {
-  Banner,
-  Header,
-  Footer,
-  Menu,
-  CartLinks,
-  OurValues,
   About,
+  Banner,
+  CakesSlider,
+  CartLinks,
+  Menu,
   News,
+  OurValues,
 } from "../../components";
+import { imgData } from "../../static/newsData";
 function Home() {
   const arr = [
     {
@@ -57,15 +57,14 @@ function Home() {
   const popular = arr.slice(3);
   return (
     <div className="home">
-      <Header />
       <Banner />
       <Menu />
       <CartLinks title={"Yangilari"} data={newData} />
+      <CakesSlider />
       <CartLinks title={"Eng ko'p sotilgan"} data={popular} />
       <OurValues />
       <About />
-      <News />
-      <Footer />
+      <News imgData={imgData} />
     </div>
   );
 }

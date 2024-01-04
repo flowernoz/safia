@@ -15,4 +15,5 @@
 }
 .detailed__btn:hover {
   background: #b99e65;
+  text-decoration: none !important;
 }
