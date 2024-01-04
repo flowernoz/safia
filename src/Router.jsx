@@ -1,8 +1,9 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import { Footer, Header } from "./components";
-import Home from "./router/home/Home";
-import Menu from "./router/Menu/Menu";
+import React from "react"
+import { Route, Routes } from "react-router-dom"
+import { Footer, Header } from "./components"
+import Menu from "./router/Menu/Menu"
+import Cart from './router/cart/Cart'
+import Home from "./router/home/Home"
 function Router() {
   return (
     <div className="routes">
@@ -14,6 +15,7 @@ function Router() {
         <Route path="/ourprojects" element={<OurProjects />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="/vacancy" element={<Vacancy />} />
+        <Route path='/cart' element={<Cart />}/>
       </Routes>
       <Footer />
     </div>

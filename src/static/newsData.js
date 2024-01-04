@@ -1,6 +1,6 @@
-import news from "../assets/news/news.jpeg";
-import news3 from "../assets/news/news2.jpeg";
-import news2 from "../assets/news/news3.jpeg";
+import news from "../assets/news/news.jpeg"
+import news3 from "../assets/news/news2.jpeg"
+import news2 from "../assets/news/news3.jpeg"
 
 export const imgData = [
   { title: "1 product", img: news },
@@ -47,4 +47,51 @@ export const imgData = [
   // { title: '51 product', img: news3 },
   // { title: '52 product', img: news },
   // { title: '53 product', img: news },
+];
+
+
+
+export const cart_data = [
+  {
+    img: "https://safiabakery.uz/uploads/products/thumbs/171_1698217025.png",
+    title: "Qaynatma xamirli  Pain",
+    price: 20000,
+    type: "new",
+  },
+  {
+    img: "https://safiabakery.uz/uploads/products/thumbs/171_1698216937.png",
+    title: "Ananasli Qatlama",
+    price: 16000,
+    type: "new",
+  },
+  {
+    img: "https://safiabakery.uz/uploads/products/thumbs/171_1698217199.png",
+    title: "Sosiskali Qatlama",
+    price: 16000,
+    type: "new",
+  },
+  {
+    img: "https://safiabakery.uz/uploads/products/thumbs/171_1669992159.png",
+    title: "Blek forest tartaletka",
+    desc: "yupqa xamirli oq biskvit tvorog-qaymoqli kremva barra malina",
+    price: 22000,
+  },
+  {
+    img: "https://safiabakery.uz/uploads/products/thumbs/171_1672828185.png",
+    title: "Blek forest tartaletka",
+    desc: "yupqa xamirli oq biskvit tvorog-qaymoqli kremva barra malina",
+    price: 22000,
+  },
+  {
+    img: "https://safiabakery.uz/uploads/products/thumbs/171_1693203748.png",
+    title: "Blek forest tartaletka",
+    desc: "yupqa xamirli oq biskvit tvorog-qaymoqli kremva barra malina",
+    price: 22000,
+  },
+  {
+    img: "https://safiabakery.uz/uploads/products/thumbs/171_1671014979.png",
+    title: "Blek forest tartaletka",
+    desc: "yupqa xamirli oq biskvit tvorog-qaymoqli kremva barra malina",
+    price: 22000,
+  },
 ];

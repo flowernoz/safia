@@ -1,17 +1,17 @@
-import "./Header.css";
-import logo from "../../assets/logos/logo.svg";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import Register from "../Register/Register";
-import Branch from "../branch/Branch";
-import ModalHeader from "./modalHeader";
+import { useState } from "react"
+import { Link } from "react-router-dom"
+import logo from "../../assets/logos/logo.svg"
+import Register from "../Register/Register"
+import Branch from "../branch/Branch"
+import "./Header.css"
+import ModalHeader from "./modalHeader"
 
-import { IoSearch, IoHomeOutline } from "react-icons/io5";
-import { FaRegUserCircle, FaRegUser } from "react-icons/fa";
-import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
-import { CiGrid41, CiLocationOn } from "react-icons/ci";
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import { IoMdClose } from "react-icons/io";
+import { CiGrid41, CiLocationOn } from "react-icons/ci"
+import { FaRegUser, FaRegUserCircle } from "react-icons/fa"
+import { HiOutlineShoppingBag } from "react-icons/hi"
+import { HiOutlineBars3CenterLeft } from "react-icons/hi2"
+import { IoMdClose } from "react-icons/io"
+import { IoHomeOutline, IoSearch } from "react-icons/io5"
 
 function Header() {
   let user = localStorage.getItem("user") || [];
@@ -80,7 +80,7 @@ function Header() {
           className="register__svg"
           onClick={() => setOpenRegister(!openRegister)}
         />
-        <Link to={"/cart"}>
+        <Link to={"cart"}>
           <HiOutlineShoppingBag />
         </Link>
         <button onClick={() => setOpenmodal(!openmodal)} className="openmodal">
