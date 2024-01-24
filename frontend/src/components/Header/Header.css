@@ -1,0 +1,158 @@
+.header {
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  background-image: linear-gradient(
+    to bottom,
+    #000000f0 15%,
+    rgba(0, 0, 0, 0.006) 100%
+  );
+}
+
+.bgblank {
+  height: 71px;
+  background: white !important;
+  color: #000;
+  z-index: 1000;
+}
+.bgblank .header__links a.header__link {
+  display: none;
+}
+.bgblank .header__buttons button,
+.bgblank .header__links button,
+.bgblank .header__links a,
+.bgblank .header__buttons a,
+.bgblank .header__buttons {
+  color: #000;
+}
+
+.header.scrolled {
+  background: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__links {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.header__links a,
+.header__links button {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+.header__links svg:hover,
+.openmodal svg:hover,
+.register__svg:hover,
+.header__buttons a svg:hover,
+.header__links button:hover,
+.header__links a:hover {
+  color: #d8a66a;
+  transition: all 0.4s ease;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header__buttons,
+.header__buttons a {
+  color: #fff;
+  font-size: 24px;
+}
+.openmodal {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Modal Header */
+
+.modalHeader {
+  width: 100%;
+  height: calc(100vh - 71px);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+  position: fixed;
+  top: 71px;
+  left: 0;
+  z-index: 800;
+  box-shadow: inset rgba(57, 56, 56, 0.18) 0px 5px 15px;
+  padding-top: 40px;
+}
+.modalHeader a {
+  color: #000;
+  font-size: 20px;
+  transition: all 0.4s ease;
+}
+.modalHeader a:hover {
+  color: #d8a66a;
+}
+
+/* Sub header */
+
+.subHeader {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 0 3px rgb(57, 56, 56);
+  display: none;
+}
+.subHeader button,
+.subHeader a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #333;
+  font-size: 14px;
+}
+.subHeader a svg,
+.subHeader button svg {
+  font-size: 24px;
+}
+.subHeader a svg:hover,
+.subHeader button svg:hover {
+  color: #d8a66a;
+}
+
+@media (max-width: 900px) {
+  .subHeader {
+    display: flex;
+  }
+}

@@ -1,0 +1,26 @@
+:root {
+  --swiper-navigation-color: rgb(154, 151, 151);
+  --swiper-navigation-size: 10px;
+  --swiper-navigation-padding: 30px;
+  --swiper-navigation-sides-offset: 40px;
+  --swiper-navigation-background-color: #333;
+  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-border-radius: 3px;
+  --swiper-pagination-bullet-width: 25px;
+  --swiper-pagination-bullet-height: 4px;
+  --swiper-pagination-bullet-inactive-color: #aaa8a8;
+  --swiper-pagination-bullet-inactive-opacity: 0.1;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 16px;
+}
+.banner {
+  height: 100vh;
+  width: 100%;
+}
+.banner__img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}

@@ -1,0 +1,52 @@
+.branch {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.places {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.branches {
+  display: flex;
+  list-style-type: none;
+  gap: 35px;
+}
+.branches li {
+  width: 200px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.branch .modal__box {
+  width: 60%;
+  height: 60%;
+  padding: 40px;
+  align-items: start;
+}
+.modal__box h1 {
+  width: 100%;
+  display: flex;
+  font-weight: normal;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+.places span {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 28px;
+}
+.places__item {
+  display: flex;
+  flex-wrap: wrap;
+}

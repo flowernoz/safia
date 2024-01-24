@@ -1,0 +1,122 @@
+.single_page {
+  width: 100%;
+  height: 100vh;
+}
+
+.single_header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 3%;
+}
+
+.single_header a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #b2babe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single_header a:hover {
+  background: #c4dae9;
+}
+
+.single_header a svg {
+  color: #fff;
+}
+
+.single_header span {
+  font-size: 17px;
+}
+
+.single_container {
+  width: 100%;
+  height: calc(100% - 70px);
+  display: flex;
+  align-items: center;
+}
+
+.container_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_left img {
+  object-fit: contain;
+  width: 90%;
+  height: 90%;
+}
+
+.container_right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container_right p {
+  font-size: 40px;
+  font-weight: 100;
+  color: #222;
+}
+
+.container_right span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #878888;
+  font-size: 15px;
+}
+
+.container_right span p {
+  font-size: 14px;
+  color: #878888;
+}
+
+.container_right p.price {
+  font-size: 27px;
+  color: #333;
+}
+
+.container_right .container_btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container_btn button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 13px 17px;
+  border-radius: 25px;
+  border: none;
+}
+
+.container_btn button.count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #c3d2dc;
+}
+
+.container_btn button.count span {
+  font-size: 16px;
+  color: #222;
+}
+
+.container_btn button.cart_btn {
+  background: #dcc38b;
+  font-size: 15px;
+  color: #fff;
+}

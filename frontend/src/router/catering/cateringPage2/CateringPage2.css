@@ -1,0 +1,25 @@
+
+.cateringPage_2_img{
+    width: 40%;
+    height: 100%;
+
+}
+
+.cateringPage_2_text{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.cateringPage_2_text p{
+    width: 70%;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: #444;
+    text-align: end;
+}

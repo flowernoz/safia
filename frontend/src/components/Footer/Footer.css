@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300;600&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+footer {
+	background-color: #2e2124;
+	font-family: 'PT Sans', sans-serif;
+}
+.footer_top {
+	width: 100%;
+	padding: 50px 3%;
+	display: grid;
+	grid-template-columns: 1fr 620px 1fr;
+	align-items: flex-start;
+}
+.footer__left {
+	padding: 30px 0 0;
+}
+.footer__left img {
+	width: 150px;
+}
+.footer__center {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 160px;
+}
+.foooter__center_links p {
+	padding: 0 0 30px;
+	font-size: 25px;
+	color: #fff;
+}
+.foooter__center_links ul li {
+	list-style: none;
+	font-size: 20px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+}
+.foooter__center_links ul li:hover {
+	color: #D8A66A;
+}
+.footer__right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 30px;
+}
+.footer__right_social_links {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 20px;
+}
+.footer__right_social_links svg {
+	font-size: 32px;
+	color: #cac7c8;
+	transition: .3s;
+}
+.footer__right_social_links svg:hover {
+	color: #fff;
+}
+.footer__right_phone_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 15px;
+}
+.footer__right_phone_info p {
+	font-size: 25px;
+	color: #fff;
+}
+.footer__right_phone_info h3 {
+	font-size: 32px;
+	color: #fff;
+	cursor: pointer;
+	transition: .1s;
+}
+.footer__right_phone_info h3:hover {
+	text-decoration: underline;
+}
+.footer__right_download {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.footer__right_download img {
+	width: 110px;
+	cursor: pointer;
+}
+.footer__line {
+	width: 100%;
+	height: 1px;
+	background-color: #979092;
+}
+.footer__bottom {
+	padding: 20px 3%;
+	width: 100%;
+	/* background-color: #eee; */
+	display: flex;
+	justify-content: space-between;
+}
+.footer__bottom p {
+color: #fff;
+}

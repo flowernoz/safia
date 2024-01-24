@@ -1,0 +1,11 @@
+export { default as Header } from "./Header/Header";
+export { default as Banner } from "./Banner/Banner";
+export { default as Menu } from "./HomeMenu/Menu";
+export { default as CartLinks } from "./CartLink/CartLink";
+export { default as OurValues } from "./OurValues/OurValues";
+export { default as About } from "./AboutUs/About";
+export { default as News } from "./News/News";
+export { default as Branch } from "./branch/Branch";
+export { default as CakesSlider } from "./CakesSlider/CakesSlider";
+export { default as MenuTop } from "./MenuTop/MenuTop";
+export { default as Footer } from "./Footer/Footer";
